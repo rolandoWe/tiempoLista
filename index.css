@@ -120,6 +120,8 @@
     /* background-color: antiquewhite; */
     width:90%;
     margin: auto;
+    color: rgb(255, 255, 255,.9);
+    font-weight: bold;
 }
 .contenedor h1{
     font-size: 25px;
