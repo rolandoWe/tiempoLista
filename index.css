@@ -8,7 +8,7 @@
     width:100%;
     max-width: 1200px;
     /* border: solid red 1px; */
-    background-color: rgb(209, 205, 205,.5);
+    background: linear-gradient(blue,white);
     padding:0 10px;
     box-sizing: border-box;
     margin: auto;
@@ -28,6 +28,7 @@
     width:90%;
     /* height:400px; */
     /* border: solid black 1px; */
+    background-color: rgb(255, 255, 255);
     margin: auto;
     padding: 5px;
 }
@@ -57,12 +58,12 @@
     padding: 5px;
     margin: 10px auto;
 }
-.tica{
+/* .tica{
     background-color: rgb(254, 170, 170);
 }
 .nica{
     background-color: rgb(142, 142, 246);
-}
+} */
 .tica_btn,.nica_btn{
     width:100%;
     /* height: 30px; */
@@ -89,7 +90,7 @@
 
 }
 .boton_b_n{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(179, 177, 177);
 
 }
 .boton_g_n{
