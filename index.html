@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="contenedor">
+        <!-- PRINCIPAL -->
+        <div class="caja_principal">
+            <div class="caja">
+                <h2>Guarda mis numeros</h2>
+                <p>Guarda los resultados de los nuevos tiempos COSTA RICA o NICARAGUA.</p>
+               <div class="tica">
+                <p>Empezemos en territorio tico</p>
+                <div class="tica_btn">
+                    <input type="button" value="Guardar numero tica" class="boton_g_t">
+                    <input type="button" value="Buscar un resultado tica" class="boton_b_t">
+                </div>
+               </div>
+<hr>
+               <div class="nica">
+                <p>Ahora vamos a NICARAGUA</p>
+                <div class="nica_btn">
+                    <input type="button" value="Guardar numero nica" class="boton_g_n">
+                    <input type="button" value="Buscar un resultado nica" class="boton_b_n">
+                </div>
+               </div>
+
+            </div>
+        </div>
+        <!-- GUARDAR LISTA DE NUMERO COSTA RICA -->
+        <div class="contenedorGuardar guardarTica">
+            <h1 class="h1">Ingresando numeros jugados del dia costa rica.</h1>
+            <p>costa rica</p>
+            <table class="tabla">
+                <thead class="thead">
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Numero</th>
+                        <th>Hora</th>
+                       <th> <span class="btn_x btn_g_t">x</span></th>
+                    </tr>
+                    <tr>
+                        <th><input type="datetime"  class="fecha inp_tica" placeholder="Ej: lunes 1 enero 2022"></th>
+                        <th><input type="number" placeholder="Ej: 00" class="numero inp_tica"></th>
+                        <th><input type="text" placeholder="Ej: 1pm" class="hora inp_tica"></th>
+                        <th><input type="button" value="add" class="add"></th>
+                    </tr>
+                </thead>
+    <div class="tcaja">
+        <tbody class="tbody">
+            <tr>
+                <td>lunes 1 enero</td>
+                <td>00</td>
+                <td>1pm</td>
+                <td>eliminar</td>
+            </tr>
+            <tr>
+                <td>lunes 1 enero</td>
+                <td>00</td>
+                <td>1pm</td>
+                <td>eliminar</td>
+            </tr>
+        </tbody>
+    </div>
+
+            </table>
+        </div>
+ 
+
+            <!-- BUSCAR LISTA DE NUMEROS COSTA RICA -->
+        <div class="caja_buscar buscarTica ">
+            <!-- <span class="btn_x btn_b_t">x</span> -->
+
+            <h1>Buscar numero</h1>
+            <p>costa rica</p>
+            <div class="input">
+                <input type="text" placeholder="buscar" class="ingresando">
+                <input type="button" value="buscar" class="buscar">
+            </div>
+            <div class="resultadoCaja">
+                <table class="tabla">
+                    <thead class="thead">
+                        <th>Fecha</th>
+                        <th>Numero</th>
+                        <!-- <th>hora</th> -->
+                       <th> Hora <span class="btn_x btn_g_t">x</span></th>
+
+                    </thead>
+                    <tbody class="tbody tbody_resultado">
+                        <tr>
+                            <td>lunes</td>
+                            <td>00</td>
+                            <td>1pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- GUARDAR LISTA DE NUMERO NICARAGUA -->
+
+         <div class="contenedorGuardar guardarNica mostra">
+            <!-- <span class="btn_x btn_g_n">x</span> -->
+
+            <h1>Ingresando numeros jugados del dia nicaragua.</h1>
+            <p>nicaragua</p>
+            <table class="tabla">
+                <thead class="thead">
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Numero</th>
+                        <th>Hora</th>
+                        <!-- <th>accion</th> -->
+                       <th> <span class="btn_x btn_g_t">x</span></th>
+
+                    </tr>
+                    <tr>
+                        <th><input type="datetime"  class="fecha_n fecha btn_n" placeholder="Ej: lunes 1 enero 2022"></th>
+                        <th><input type="number" placeholder="Ej: 00" class="numero_n numero btn_n"></th>
+                        <th><input type="text" placeholder="Ej: 1pm" class="hora_n hora btn_n"></th>
+                        <th><input type="button" value="add" class="add_n add"></th>
+                    </tr>
+                </thead>
+    
+                <tbody class="tbody tbody_n">
+                    <tr>
+                        <td>lunes 1 enero</td>
+                        <td>00</td>
+                        <td>1pm</td>
+                        <td>eliminar</td>
+                    </tr>
+                    <tr>
+                        <td>lunes 1 enero</td>
+                        <td>00</td>
+                        <td>1pm</td>
+                        <td>eliminar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> 
+                    <!-- BUSCAR LISTA DE NUMEROS NICARAGUA -->
+                     <div class="caja_buscar buscarNica mostra">
+            <!-- <span class="btn_x btn_b_n">x</span> -->
+
+                        <h1>Buscar numero</h1>
+                        <p>nicaragua</p>
+                        <div class="input">
+                            <input type="text" placeholder="buscar" class="ingresando_n ingresando">
+                            <input type="button" value="buscar" class="buscar_n buscar">
+                        </div>
+                        <div class="resultadoCaja">
+                            <table class="tabla">
+                                <thead class="thead">
+                                    <th>Fecha</th>
+                                    <th>Numero</th>
+                       <th> Hora <span class="btn_x btn_g_t">x</span></th>
+                       <!-- <th>hora </th> -->
+                                </thead>
+                                <tbody class="tbody tbody_resultado_n">
+                                    <tr>
+                                        <td>lunes</td>
+                                        <td>00</td>
+                                        <td>1pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div> 
+    </div>
+    <script src="botones.js"></script>
+    <script src="tica.js"></script>
+    <script src="nica.js"></script>
+</body>
+</html>
