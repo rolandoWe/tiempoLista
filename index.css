@@ -281,7 +281,7 @@ padding: 10px 0;
 .caja_mensaje{
     background-color: green;
     width:90%;
-    margin:50px auto;
+    margin: auto;
     border-radius: 5px;
     position: relative;
 
@@ -314,6 +314,7 @@ padding: 10px 0;
     .caja_mensaje{
         width: 100%;
         border-radius:0px;
+        margin: 50px auto;
     }
     .mensaje{
         font-size: 18px;
