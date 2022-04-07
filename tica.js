@@ -31,8 +31,8 @@ let array=JSON.parse(localStorage.getItem("tica"))
         tbody.innerHTML+=`
         <tr id=${a.id}>
         <td>${a.Fecha}</td>
-        <td>${a.Numero}</td>
         <td>${a.Hora}</td>
+        <td>${a.Numero}</td>
         <td class="eliminar"><i class="fa-solid fa-trash-can"></i></td>
     </tr>
         `;
@@ -78,8 +78,9 @@ for(let a of array){
         tbody_resultado.innerHTML+=`
         <tr>
         <td>${a.Fecha}</td>
-        <td>${a.Numero}</td>
         <td>${a.Hora}</td>
+        <td>${a.Numero}</td>
+
     </tr>
         `;
     }
@@ -100,32 +101,37 @@ ingresando.addEventListener("keyup",()=>{
 })
 
 add.addEventListener("click",()=>{
+    mensaje()
     f=fecha.value;
     n=numero.value;
     h=hora.value;
     if(f!="" &n!=""&h!=""){
         recogerDato(f,n,h)
         pintar()
+        document.querySelector(".fecha").value="";
+        document.querySelector(".numero").value="";
+        document.querySelector(".hora").value="";
     }
-    document.querySelector(".fecha").value="";
-    document.querySelector(".numero").value="";
-    document.querySelector(".hora").value="";
+
 
 })
 document.querySelectorAll(".inp_tica").forEach((g)=>{
     g.addEventListener("keyup",(g)=>{
         if(g.key=="Enter"){
+        mensaje()
+
             f=fecha.value;
             n=numero.value;
             h=hora.value;
             if(f!="" &n!=""&h!=""){
                 recogerDato(f,n,h)
                 pintar()
+                document.querySelector(".fecha").value="";
+                document.querySelector(".numero").value="";
+                document.querySelector(".hora").value="";
+                console.log("enter")
             }
-            document.querySelector(".fecha").value="";
-            document.querySelector(".numero").value="";
-            document.querySelector(".hora").value="";
-            console.log("enter")
+
         }  
     })
 })
@@ -133,9 +139,13 @@ document.querySelectorAll(".inp_tica").forEach((g)=>{
 tbody.addEventListener("click",(e)=>{
     // console.log(e.path[2].id)
     if(e.target.className==="fa-solid fa-trash-can"){
-        eliminar(e.path[2].id)
-        borrarId()
-        pintar()
+        if(confirm("quieres eliminar de manera permanente?")){
+            eliminar(e.path[2].id)
+            borrarId()
+            pintar()
+            eliminado()
+        }
+
 
     }
 })

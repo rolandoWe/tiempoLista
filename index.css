@@ -117,7 +117,7 @@
 
 }
 .btn_x i{
-    color: rgb(9, 45, 250);
+    color: rgb(251, 172, 172);
     font-size: 23px;
 }
 .contenedor h1,.contenedor p{
@@ -130,6 +130,9 @@
 }
 .contenedor h1{
     font-size: 25px;
+}
+.tcaja{
+    position: relative;
 }
 .tabla{
     /* border: solid black 1px; */
@@ -262,9 +265,59 @@ padding: 10px 0;
 .eliminar i:hover{
     color: rgb(255, 0, 0);
 }
+.contenedor_mensaje{
+    position: fixed;
+    margin: auto;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    height: 100vh;
+    transform: translateY(-200%);
+    transition: .3s;
+    background-color: rgb(228, 225, 225,.2);
+}
+.caja_mensaje{
+    background-color: green;
+    width:90%;
+    margin: auto;
+    border-radius: 5px;
+    position: relative;
+
+}
+
+.mostrar_mensaje{
+    transform: translateY(0%);
+
+}
+.verde{
+    background-color: rgb(144, 255, 144);
+}
+.rojo{
+    background-color: rgb(255, 172, 172);
+}
+
+.mensaje{
+    color: black !important;
+    padding: 10px 0;
+   font-size: 20px;
+
+}
 @media (max-width:576px){
     .contenedor{
         padding: 0;
+    }
+    .contenedor_mensaje{
+        width: 100%;
+    }
+    .caja_mensaje{
+        width: 100%;
+        border-radius:0px;
+    }
+    .mensaje{
+        font-size: 18px;
+
     }
     .caja{
         width:100%;

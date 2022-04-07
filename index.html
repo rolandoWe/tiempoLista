@@ -37,6 +37,8 @@
         </div>
         <!-- GUARDAR LISTA DE NUMERO COSTA RICA -->
         <div class="contenedorGuardar guardarTica">
+       <!-- MENSAJE OPERACION -->
+
             <h1 class="h1">Guardar Numero.</h1>
             <p>costa rica</p>
             <table class="tabla">
@@ -50,7 +52,7 @@
                     <tr>
                         <th><input type="datetime"  class="fecha inp_tica" placeholder="Ej: lunes 1 enero 2022"></th>
                         <th>
-                            <input type="text" placeholder="Ej: 1pm" class="numero inp_tica">
+                            <input type="text" placeholder="hora Ej: 1pm" class="hora inp_tica">
                         <!-- <select name="" id="">
                             <option value="">hora</option>
                             <option value="1pm">1pm</option>
@@ -59,7 +61,7 @@
                         </select> -->
                         </th>
                         <th>
-                            <input type="number" placeholder="Ej: 99" class="hora inp_tica">
+                            <input type="number" placeholder="numero Ej: 99" class="numero inp_tica">
                             <!-- <select name="" id="">
                                 <option value="">numero</option>
                             </select> -->
@@ -68,6 +70,7 @@
                     </tr>
                 </thead>
     <div class="tcaja">
+                                 
         <tbody class="tbody">
             <tr>
                 <td>lunes 1 enero</td>
@@ -135,8 +138,8 @@
                     </tr>
                     <tr>
                         <th><input type="datetime"  class="fecha_n fecha btn_n" placeholder="Ej: lunes 1 enero 2022"></th>
-                        <th><input type="text" placeholder="Ej: 1pm" class="numero_n numero btn_n"></th>
-                        <th><input type="number" placeholder="Ej: 99" class="hora_n hora btn_n"></th>
+                        <th><input type="text" placeholder="Ej: 1pm" class="hora_n hora btn_n"></th>
+                        <th><input type="number" placeholder="Ej: 99" class="numero_n numero btn_n"></th>
                         <th><i class="fa-solid fa-square-plus add_n add"></i></th>
                     </tr>
                 </thead>
@@ -185,9 +188,18 @@
                             </table>
                         </div>
                     </div> 
+                    <div class="contenedor_mensaje">
+                        <div class="caja_mensaje">
+                            <p class="mensaje">mensaje</p>
+                        </div>
+                    </div>
+
+
     </div>
     <script src="botones.js"></script>
     <script src="tica.js"></script>
     <script src="nica.js"></script>
+    <script src="mensaje.js"></script>
+    <script src="mensaje_nica.js"></script>
 </body>
 </html>

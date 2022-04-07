@@ -34,8 +34,8 @@ function pintarr(){
 tbody_n.innerHTML+=`
                   <tr id=${a.id}>
                   <td>${a.Fecha}</td>
-                  <td>${a.Numero}</td>
                   <td>${a.Hora}</td>
+                  <td>${a.Numero}</td>
                   <td class="eliminar"><i class="fa-solid fa-trash-can"></i></td>
                   </tr>
                   `;
@@ -83,8 +83,8 @@ function filtrarr(){
             tbody_resultado_n.innerHTML+=`
             <tr>
             <td>${a.Fecha}</td>
-            <td>${a.Numero}</td>
             <td>${a.Hora}</td>
+            <td>${a.Numero}</td>
         </tr>
             `
         }
@@ -102,6 +102,7 @@ function filtrarr(){
 }
 
 add_n.addEventListener("click",()=>{
+    mensaje_n()
     let f=fecha_n.value;
     let n=numero_n.value;
     let h=hora_n.value
@@ -122,11 +123,13 @@ document.querySelectorAll(".btn_n").forEach((f)=>{
             let n=numero_n.value;
             let h=hora_n.value
             if(f!=""&n!=""&h!=""){
-                crearOj(f,n,h)
-                pintarr()
-                document.querySelector(".fecha_n").value="";
-                document.querySelector(".numero_n").value="";
-                document.querySelector(".hora_n").value="";
+                    crearOj(f,n,h)
+                    pintarr()
+                    document.querySelector(".fecha_n").value="";
+                    document.querySelector(".numero_n").value="";
+                    document.querySelector(".hora_n").value="";
+                
+ 
             }
         }
     })
@@ -134,9 +137,13 @@ document.querySelectorAll(".btn_n").forEach((f)=>{
 tbody_n.addEventListener("click",(e)=>{
     console.log(e.path[1].id)
     if(e.target.className==="fa-solid fa-trash-can"){
-        eliminarr(e.path[2].id)
-        borrarI()
-        pintarr()
+        if(confirm("quieres eliminarme?")){
+            eliminarr(e.path[2].id)
+            borrarI()
+            pintarr()
+            eliminado_n()
+        }
+
 
     }
 })
