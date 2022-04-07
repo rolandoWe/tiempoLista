@@ -36,7 +36,7 @@ tbody_n.innerHTML+=`
                   <td>${a.Fecha}</td>
                   <td>${a.Numero}</td>
                   <td>${a.Hora}</td>
-                  <td class="eliminar">Delet</td>
+                  <td class="eliminar"><i class="fa-solid fa-trash-can"></i></td>
                   </tr>
                   `;
         }
@@ -133,8 +133,8 @@ document.querySelectorAll(".btn_n").forEach((f)=>{
 })
 tbody_n.addEventListener("click",(e)=>{
     console.log(e.path[1].id)
-    if(e.target.className==="eliminar"){
-        eliminarr(e.path[1].id)
+    if(e.target.className==="fa-solid fa-trash-can"){
+        eliminarr(e.path[2].id)
         borrarI()
         pintarr()
 

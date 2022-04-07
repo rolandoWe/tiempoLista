@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap" rel="stylesheet">
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -35,7 +37,7 @@
         </div>
         <!-- GUARDAR LISTA DE NUMERO COSTA RICA -->
         <div class="contenedorGuardar guardarTica">
-            <h1 class="h1">Ingresando numeros del dia costa rica.</h1>
+            <h1 class="h1">Guardar Numero.</h1>
             <p>costa rica</p>
             <table class="tabla">
                 <thead class="thead">
@@ -43,13 +45,26 @@
                         <th>Fecha</th>
                         <th>Hora</th>
                         <th>Numero</th>
-                       <th> <span class="btn_x btn_g_t">x</span></th>
+                       <th> <span class="btn_x btn_g_"><i class="fa-solid fa-circle-xmark"></i></span></th>
                     </tr>
                     <tr>
                         <th><input type="datetime"  class="fecha inp_tica" placeholder="Ej: lunes 1 enero 2022"></th>
-                        <th><input type="text" placeholder="Ej: 1pm" class="numero inp_tica"></th>
-                        <th><input type="number" placeholder="Ej: 99" class="hora inp_tica"></th>
-                        <th><input type="button" value="add" class="add"></th>
+                        <th>
+                            <input type="text" placeholder="Ej: 1pm" class="numero inp_tica">
+                        <!-- <select name="" id="">
+                            <option value="">hora</option>
+                            <option value="1pm">1pm</option>
+                            <option value="4pm">4pm</option>
+                            <option value="7pm">7pm</option>
+                        </select> -->
+                        </th>
+                        <th>
+                            <input type="number" placeholder="Ej: 99" class="hora inp_tica">
+                            <!-- <select name="" id="">
+                                <option value="">numero</option>
+                            </select> -->
+                        </th>
+                        <th><i class="fa-solid fa-square-plus add"></i></th>
                     </tr>
                 </thead>
     <div class="tcaja">
@@ -88,7 +103,7 @@
                     <thead class="thead">
                         <th>Fecha</th>
                         <th>Hora</th>
-                       <th> Numero <span class="btn_x btn_g_t">x</span></th>
+                       <th> Numero <span class="btn_x btn_g_t"><i class="fa-solid fa-circle-xmark"></i></span></th>
 
                     </thead>
                     <tbody class="tbody tbody_resultado">
@@ -106,7 +121,7 @@
          <div class="contenedorGuardar guardarNica mostra">
             <!-- <span class="btn_x btn_g_n">x</span> -->
 
-            <h1>Ingresando numeros del dia nicaragua.</h1>
+            <h1>Guardar Numero.</h1>
             <p>nicaragua</p>
             <table class="tabla">
                 <thead class="thead">
@@ -115,14 +130,14 @@
                         <th>Hora</th>
                         <th>Numero</th>
                         <!-- <th>accion</th> -->
-                       <th> <span class="btn_x btn_g_t">x</span></th>
+                       <th> <span class="btn_x btn_g_t"><i class="fa-solid fa-circle-xmark"></i></span></th>
 
                     </tr>
                     <tr>
                         <th><input type="datetime"  class="fecha_n fecha btn_n" placeholder="Ej: lunes 1 enero 2022"></th>
                         <th><input type="text" placeholder="Ej: 1pm" class="numero_n numero btn_n"></th>
                         <th><input type="number" placeholder="Ej: 99" class="hora_n hora btn_n"></th>
-                        <th><input type="button" value="add" class="add_n add"></th>
+                        <th><i class="fa-solid fa-square-plus add_n add"></i></th>
                     </tr>
                 </thead>
     
@@ -157,7 +172,7 @@
                                 <thead class="thead">
                                     <th>Fecha</th>
                                     <th>Hora</th>
-                       <th> Numero <span class="btn_x btn_g_t">x</span></th>
+                       <th> Numero <span class="btn_x btn_g_t"><i class="fa-solid fa-circle-xmark"></i></span></th>
                        <!-- <th>hora </th> -->
                                 </thead>
                                 <tbody class="tbody tbody_resultado_n">

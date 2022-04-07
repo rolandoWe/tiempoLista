@@ -33,7 +33,7 @@ let array=JSON.parse(localStorage.getItem("tica"))
         <td>${a.Fecha}</td>
         <td>${a.Numero}</td>
         <td>${a.Hora}</td>
-        <td class="eliminar">Delet</td>
+        <td class="eliminar"><i class="fa-solid fa-trash-can"></i></td>
     </tr>
         `;
         }
@@ -131,10 +131,9 @@ document.querySelectorAll(".inp_tica").forEach((g)=>{
 })
 
 tbody.addEventListener("click",(e)=>{
-    // console.log(e.path[1].id)
-    if(e.target.className==="eliminar"){
-        console.log("eliminando")
-        eliminar(e.path[1].id)
+    // console.log(e.path[2].id)
+    if(e.target.className==="fa-solid fa-trash-can"){
+        eliminar(e.path[2].id)
         borrarId()
         pintar()
 
