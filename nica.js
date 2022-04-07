@@ -119,6 +119,7 @@ add_n.addEventListener("click",()=>{
 document.querySelectorAll(".btn_n").forEach((f)=>{
     f.addEventListener("keyup",(f)=>{
         if(f.key==="Enter"){
+            mensaje_n()
             let f=fecha_n.value;
             let n=numero_n.value;
             let h=hora_n.value
