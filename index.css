@@ -59,12 +59,12 @@
     padding: 5px;
     margin: 10px auto;
 }
-/* .tica{
-    background-color: rgb(254, 170, 170);
+.tica{
+    background-color: rgba(255, 0, 0, 0.1);
 }
 .nica{
-    background-color: rgb(142, 142, 246);
-} */
+    background-color: rgb(0, 0, 255,.1);
+}
 .tica_btn,.nica_btn{
     width:100%;
     /* height: 30px; */
@@ -74,19 +74,21 @@
     justify-content: space-evenly;
 }
 .nica_btn input,.tica_btn input{
-    width:250px;
-    height:30px;
+    /* width:250px; */
+    /* height:30px; */
     margin: 20px 0;
+    padding: 5px 10px;
     font-size: 18px;
-    border: none;
+    border: solid rgb(0, 0, 0) 2px;
+    background-color: transparent;
     border-radius: 5px;
     cursor: pointer;
 }
-.boton_g_t{
+/* .boton_g_t{
     background-color: rgb(221, 8, 8);
     color: white;
-}
-.boton_b_t{
+} */
+/* .boton_b_t{
     background-color: rgb(104, 162, 248);
 
 }
@@ -97,7 +99,7 @@
 .boton_g_n{
     background-color: rgb(1, 5, 118);
  color: white;
-}
+} */
 
 .btn_x{
     display: inline-block;
@@ -338,7 +340,7 @@ padding: 10px 0;
         flex-wrap: wrap;
     }
     .tica_btn input,.nica_btn input{
-      width:90%
+      width:65%
     }
 .fecha,.numero,.hora{
     width:80%
